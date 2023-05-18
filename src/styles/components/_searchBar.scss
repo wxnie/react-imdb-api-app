@@ -1,0 +1,27 @@
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0 30px;
+  background: transparentize(#ffffff, .5);
+  z-index: 10;
+  &__input {
+    width: 60%;
+    font-size: 22px;
+    text-align: center;
+    min-width: 270px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #acacac;
+    transition: border-color .25s;
+    &:focus {
+      border-color: #2f2f2f;
+    }
+  }
+  &__error {
+    position: absolute;
+    bottom: -15px;
+    color: #e78282
+  }
+}
