@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/App.scss'
-import searchMovies from "./api"
+import { searchMovies } from './api'
 import SearchBar from "./components/SearchBar"
 import MovieList from "./components/MoviesList"
 

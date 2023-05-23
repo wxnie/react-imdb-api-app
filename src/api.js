@@ -11,4 +11,16 @@ const searchMovies = async (term) => {
   return response.data.Search
 }
 
-export default searchMovies
+const getDetails = async (id) => {
+  const response = await axios.get('https://www.omdbapi.com/', {
+    params: {
+      i: id,
+      apikey: "9f62878a",
+      plot: 'full'
+    }
+  })
+
+  return response.data
+}
+
+export {searchMovies, getDetails}

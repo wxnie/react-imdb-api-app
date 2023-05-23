@@ -1,6 +1,6 @@
 .movie-box {
   height: 100%;
-  background: #fcfcfc;
+  background: $light-color;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -20,7 +20,7 @@
     font-size: 18px;
     text-align: center;
     font-weight: 500;
-    color: #2f3032;
+    color: $dark-color;
     &-wrap {
       padding: 20px 15px;
     }
